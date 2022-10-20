@@ -99,7 +99,7 @@ button[type=submit]:hover {
     text-align: center;
 }
 .show-message {
-    animation: flash .5s 2 linear;
+    animation: blink .5s 2 linear;
 }
 
 ul {
@@ -179,7 +179,7 @@ span:hover {
     }
 }
 
-@keyframes flash {
+@keyframes blink {
     0% {
         opacity: 0;
     }
