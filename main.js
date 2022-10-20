@@ -84,6 +84,9 @@ function updateDisplay(tasks) {
 function showMessage(text) {
     const message = document.querySelector('#message');
     message.innerHTML = text;
+    
+    message.classList.remove('show-message'); //Remove existing class so animations resets
+    message.scrollBy(0, 0);
     message.classList.add('show-message'); //Add class for CSS animation
 }
 function clearMessage() {
